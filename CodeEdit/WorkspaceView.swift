@@ -7,6 +7,7 @@
 
 import SwiftUI
 import WorkspaceClient
+import TabBar
 import StatusBar
 import ExtensionsStore
 import AppKit
@@ -92,7 +93,7 @@ struct WorkspaceView: View {
                     }
                     .safeAreaInset(edge: .top, spacing: 0) {
                         VStack(spacing: 0) {
-                            TabBar(windowController: windowController, workspace: workspace)
+                            TabBarView(windowController: windowController, workspace: workspace)
                             TabBarBottomDivider()
                         }
                     }

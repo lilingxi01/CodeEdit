@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import WorkspaceClient
+import Code
 import AppPreferences
 import CodeEditUI
 
-struct TabBar: View {
+public struct TabBarView: View {
     /// The height of tab bar.
     /// I am not making it a private variable because it may need to be used in outside views.
-    static let height = 28.0
+    public static let height = 28.0
 
     @Environment(\.colorScheme)
     private var colorScheme
@@ -29,7 +29,7 @@ struct TabBar: View {
     @StateObject
     private var prefs: AppPreferencesModel = .shared
 
-    // TabBar(windowController: windowController, workspace: workspace)
+    // TabBarView(windowController: windowController, workspace: workspace)
     init(windowController: NSWindowController, workspace: WorkspaceDocument) {
         self.windowController = windowController
         self.workspace = workspace

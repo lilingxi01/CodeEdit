@@ -9,7 +9,6 @@ import SwiftUI
 import WorkspaceClient
 import AppPreferences
 import CodeEditUI
-import TabBar
 
 // Disable the rule because this view is fairly complicated and I have already modularize some parts.
 // swiftlint:disable type_body_length
